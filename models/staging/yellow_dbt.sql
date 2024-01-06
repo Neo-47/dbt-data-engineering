@@ -43,7 +43,7 @@ from tripdata
 
 
 -- dbt build --m <model.sql> --var 'is_test_run: false'
-{% if var('is_test_run', default=true) %}
+{% if var('is_test_run', default=False) %}
 
   limit 100
 
